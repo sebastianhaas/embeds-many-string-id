@@ -1,0 +1,25 @@
+{
+  "name": "Book",
+  "plural": "Books",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "chapters": {
+      "type": "embedsMany",
+      "model": "Chapter",
+      "property": "chapterList"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

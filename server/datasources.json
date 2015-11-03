@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "name": "mongo",
+    "connector": "mongodb",
+    "database": "mongoObjectIdEmbedded"
+  },
+  "transient": {
+    "name": "transient",
+    "connector": "transient"
+  }
+}
